@@ -4,24 +4,72 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #141414;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--background);
+  background: var(--foreground);
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+} */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .container {
+    @apply max-w-[1400px] w-full px-4 mx-auto;
   }
+  .Subcontainer {
+    @apply max-w-[1500px] w-full px-4 mx-auto;
+  }
+
+  /* ===== TYPOGRAPHY ===== */
+  .text-18-medium {
+    @apply text-[18px] leading-[27px] font-medium;
+  }
+  .texts-60-semibold {
+    @apply w-[758px] text-[60px] leading-[72px] font-semibold;
+  }
+  .texts-40-bold {
+    @apply text-[40px] leading-[60px] ;
+  }
+  .texts-40-bold {
+    @apply text-[40px] leading-[60px] ;
+  }
+
+  /* ==== LINKS ===== */
+  .nav-links-hover {
+    @apply hover:bg-greyShades-200 px-[24px] py-[14px] rounded-[10px];
+  }
+  .active-nav-links {
+    @apply bg-greyShades-200 rounded-[10px] border-[1px] border-greyShades-400;
+  }
+
+  /* ====== SHADCN OVERIDES ====== */
+  .shad-greyShades-primary-btn {
+    @apply bg-greyShades-200 text-white-200 rounded-[10px] border-[1px] border-greyShades-400 !important;
+  }
+}
+
+.hero {
+  width: 358px;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33.6px;
+}
+.heroimg {
+  max-width: 920px;
+  width: 100%;
+  height: 650px;
+}
+
+.slick-slide {
+  padding: 0 10px; /* Adjust this value to add horizontal gap */
+}
+
+.slick-list {
+  margin: 0 -10px; /* This compensates for the padding on the outer container */
 }
