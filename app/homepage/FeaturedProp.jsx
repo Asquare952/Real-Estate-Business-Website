@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -82,7 +83,7 @@ const FeaturedProp = () => {
                   className="bg-greyShades-200 rounded-xl border-[1px] border-greyShades-400 flex flex-col gap-8 space-y-1.5 p-6"
                 >
                   <div>
-                    <img src={image} alt="" className="w-full max-w-[432px] h-auto rounded-xl aspect-video object-cover" />
+                    <Image src={image} alt="" width={432} height={318} className="w-full max-w-[432px] h-auto rounded-xl aspect-video object-cover" />
                   </div>
                   <div className="flex flex-col gap-2">
                     <h3>{title}</h3>
