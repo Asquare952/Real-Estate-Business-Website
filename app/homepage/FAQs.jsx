@@ -9,9 +9,9 @@ import "slick-carousel/slick/slick-theme.css";
 import { NextArrow } from "@/components/customeSliders/SliderArrow";
 import { PrevArrow } from "@/components/customeSliders/SliderArrow";
 import { useState } from "react";
-import Properties from "@/utils/propertiesData";
-const FeaturedProp = () => {
-  const [Property, setProperty] = useState(Properties);
+import FAQ from "./utils/faqsData";
+const FAQs = () => {
+  const [FAQs, setFAQs] = useState(FAQ);
   const settings = {
     dots: false,
     infinite: false,
@@ -58,25 +58,29 @@ const FeaturedProp = () => {
 
   return (
     <>
-      <section className="container flex flex-col gap-4">
+      <section className="container flex flex-col gap-4 mt-10">
         <div className="mb-1 mt-4">
-          <Image src="/Assets/Images/Abstract-design-1.png" alt="" width={68} height={30}/>
+          <Image
+            src="/Assets/Images/Abstract-design-1.png"
+            alt=""
+            width={68}
+            height={30}
+          />
         </div>
         <div className="flex flex-col gap-3 md:flex-row md:items-center">
           <div className="flex flex-col gap-5">
             <h3 className="font-semibold text-2xl lg:text-[38px]">
-              Featured Properties
+              Frequently Asked Questions
             </h3>
             <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
-              Explore our handpicked selection of featured properties. Each
-              listing offers a glimpse into exceptional homes and investments
-              available through Estatein. Click "View Details" for more
-              information.
+              Find answers to common questions about Estatein's services,
+              property listings, and the real estate process. We're here to
+              provide clarity and assist you every step of the way.
             </p>
           </div>
           <div>
             <Button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
-              <Link href="/properties">View All Properties</Link>
+              <Link href="/properties">View All FAQs</Link>
             </Button>
           </div>
         </div>
@@ -84,44 +88,19 @@ const FeaturedProp = () => {
         {/* Properties Card */}
         <div className="mt-4 relative">
           <Slider {...settings}>
-            {Property.map((property) => {
-              const { id, image, title, desc, price } = property;
+            {FAQs.map((faqs) => {
+              const { id, title, desc } = faqs;
               return (
                 <div
                   key={id}
                   className="bg-greyShades-200 rounded-xl border-[1px] border-greyShades-400 flex flex-col gap-8 space-y-1.5 p-6"
                 >
-                  <div>
-                    <Image src={image} alt="" width={432} height={318} className="w-full max-w-[432px] h-auto rounded-xl aspect-video object-cover" />
-                  </div>
-                  <div className="flex flex-col gap-2 pt-5">
-                    <h3 className="font-semibold text-2xl">{title}</h3>
-                    <p className="font-medium text-lg text-greyShades-900">{desc}</p>
-                  </div>
-                  <div className="flex justify-between flex-wrap pt-5">
-                    {property.features.map((feature, index) => {
-                      const { icon, text } = feature;
-                      return (
-                        <div
-                          key={index}
-                          className="bg-greyShades-300 rounded-3xl flex items-center py-2 px-[14px] gap-1"
-                        >
-                          <span>{icon}</span>
-                          <span>{text}</span>
-                        </div>
-                      );
-                    })}
-                  </div>
+                  <h3 className="font-semibold text-2xl">{title}</h3>
+                  <p className="font-medium text-lg text-greyShades-900">{desc}</p>
 
-                  <div className=" flex justify-between gap-1 items-center pt-4">
-                    <div className="flex flex-col gap-1">
-                      <span className="font-medium text-lg text-greyShades-900">Price</span>
-                      <p className="font-semibold text-2xl">{price}</p>
-                    </div>
-                    <Button className="bg-purple-200">
-                      View Property Details
-                    </Button>
-                  </div>
+                  <Button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
+                    Read More
+                  </Button>
                 </div>
               );
             })}
@@ -132,4 +111,4 @@ const FeaturedProp = () => {
   );
 };
 
-export default FeaturedProp;
+export default FAQs;

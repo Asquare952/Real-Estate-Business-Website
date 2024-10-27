@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
+import Image from "next/image";
 // import Link from "next/link";
 import HeroBox from "./utils/heroBoxData";
 import SubHeroBox from "./utils/subHeroBoxData";
@@ -11,9 +12,11 @@ const Herosec = () => {
     <>
       <section className="container flex flex-col lg:items-center mt-9 lg:mt-0 lg:flex-row-reverse">
         <div>
-          <img
+          <Image
             src="/Assets/Images/Home-hero-image.png"
             alt=""
+            width={432}
+            height={318}
             className="heroimg xl:w-full"
           />
         </div>
@@ -84,7 +87,7 @@ const Herosec = () => {
                 key={id}
                 className="flex flex-col justify-center  items-center text-center gap-3 bg-greyShades-300 rounded-xl border-[1px] border-greyShades-400 py-3"
               >
-                <img src={icon1} alt="" className="w-[82px]"/>
+                <Image src={icon1} alt="" width={300} height={50} className="w-[82px]"/>
                 <p className="font-semibold text-[14px] md:text-[18px]">{para}</p>
               </div>
             );
