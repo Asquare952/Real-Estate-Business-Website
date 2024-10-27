@@ -73,8 +73,8 @@ const FAQs = () => {
               Frequently Asked Questions
             </h3>
             <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
-              Find answers to common questions about Estatein's services,
-              property listings, and the real estate process. We're here to
+              Find answers to common questions about Estatein&apos;s services,
+              property listings, and the real estate process. We&apos;re here to
               provide clarity and assist you every step of the way.
             </p>
           </div>

@@ -70,7 +70,7 @@ const FeaturedProp = () => {
             <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
-              available through Estatein. Click "View Details" for more
+              available through Estatein. Click &quot;View Details&quot; for more
               information.
             </p>
           </div>
