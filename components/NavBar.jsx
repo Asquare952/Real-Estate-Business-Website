@@ -20,7 +20,7 @@ const NavBar = () => {
       <section className="container flex justify-between items-center">
         <div className="flex items-center justify-between">
           <Link href="/" className="">
-            <Image src="/Assets/Images/Logo-1.png" width={160} height={26} />
+            <Image src="/Assets/Images/Logo-1.png" alt="" width={160} height={26} />
           </Link>
           <div className="lg:hidden" onClick={handleSideNav}>
             <BiMenuAltRight className="w-10 h-8" />
