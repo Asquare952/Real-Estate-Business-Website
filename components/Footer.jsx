@@ -10,7 +10,7 @@ const Footer = () => {
       <footer className="container mt-12 flex flex-col">
         <div className="flex flex-col gap-7">
           <div className="flex items-center gap-2">
-            <Image src="/Assets/Images/logo.png" width={48} height={48} />
+            <Image src="/Assets/Images/logo.png" alt="" width={48} height={48} />
             <p className="font-medium text-lg">Estatain</p>
           </div>
           <div className="relative">
