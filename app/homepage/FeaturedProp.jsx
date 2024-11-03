@@ -82,8 +82,8 @@ const FeaturedProp = () => {
         </div>
 
         {/* Properties Card */}
-        <div className="mt-4 relative">
-          <Slider {...settings}>
+        <div className="mt-4 ">
+          <Slider {...settings} className="relative">
             {Property.map((property) => {
               const { id, image, title, desc, price } = property;
               return (

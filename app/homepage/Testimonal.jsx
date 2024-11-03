@@ -72,7 +72,7 @@ const Testimonal = () => {
             <h3 className="font-semibold text-2xl lg:text-[38px]">
               What Our Clients Say
             </h3>
-            <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
+            <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900 lg:w-[">
               Read the success stories and heartfelt testimonials from our
               valued clients. Discover why they chose Estatein for their real
               estate needs.
@@ -111,7 +111,7 @@ const Testimonal = () => {
                   </div>
 
                   <div className="flex flex-col gap-2 pt-5">
-                    <h3 className="font-semibold text-2xl">{title}</h3>
+                    <h3 className="font-semibold lg:text-2xl">{title}</h3>
                     <p className="font-medium text-lg w-[412]">{desc}</p>
                   </div>
 

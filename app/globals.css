@@ -13,6 +13,9 @@ html body {
   color: var(--background);
   background: var(--foreground);
 }
+footer > div{
+  padding-bottom: 35px;
+}
 /* * {
   padding: 0;
   margin: 0;
@@ -34,10 +37,10 @@ html body {
     @apply w-[758px] text-[60px] leading-[72px] font-semibold;
   }
   .texts-40-bold {
-    @apply text-[40px] leading-[60px] ;
+    @apply text-[40px] leading-[60px];
   }
   .texts-40-bold {
-    @apply text-[40px] leading-[60px] ;
+    @apply text-[40px] leading-[60px];
   }
 
   /* ==== LINKS ===== */
