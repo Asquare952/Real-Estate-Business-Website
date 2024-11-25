@@ -23,7 +23,7 @@ footer > div{
 } */
 @layer utilities {
   .container {
-    @apply max-w-[1400px] w-full px-4 mx-auto;
+    @apply max-w-[1400px] w-full px-3 m-auto;
   }
   .Subcontainer {
     @apply max-w-[1500px] w-full px-4 mx-auto;

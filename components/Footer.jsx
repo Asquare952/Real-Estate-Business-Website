@@ -18,7 +18,7 @@ const Footer = () => {
             <input
               type="email"
               placeholder="Enter Your Email"
-              className=" bg-greyShades-200 rounded-xl border-[1px] border-greyShades-400 py-[10px] pl-10 pr-14"
+              className="w-full bg-greyShades-200 rounded-xl border-[1px] border-greyShades-400 py-[10px] pl-10 pr-14"
             />
             <FiSend className="absolute left-[230px] top-4 text-lg" />
           </div>

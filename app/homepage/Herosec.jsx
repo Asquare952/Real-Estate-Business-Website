@@ -3,10 +3,9 @@ import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Image from "next/image";
 // import Link from "next/link";
-import HeroBox from "./utils/heroBoxData";
+import HeroBox from "@/components/heroBox/HeroBox";
 import SubHeroBox from "./utils/subHeroBoxData";
 const Herosec = () => {
-  const [Herobox, setHerobox] = useState(HeroBox);
   const [SubHerobox, setSubHerobox] = useState(SubHeroBox);
   return (
     <>
@@ -38,47 +37,12 @@ const Herosec = () => {
               Browse Properties
             </Button>
           </div>
-          <div className="flex flex-col gap-5 md:flex-row">
-            {/* <div className="flex flex-col text-center lg:text-start gap-1 bg-greyShades-300 rounded-xl border-2 border-greyShades-400 py-4 px-6">
-      <h3 className="font-bold text-[24px] text-white-200">200+</h3>
-      <p className="font-medium text-[18px] text-greyShades-900">
-        Happy Customers
-      </p>
-    </div>
-    <div className="flex flex-col text-center lg:text-start gap-1 bg-greyShades-300 rounded-xl border-2 border-greyShades-400 py-4 px-6">
-      <h3 className="font-bold text-[24px] text-white-200">10k+</h3>
-      <p className="font-medium text-[18px] text-greyShades-900">
-        Properties For Clients
-      </p>
-    </div>
-    <div className="flex flex-col col-span-2 text-center lg:text-start gap-1 bg-greyShades-300 rounded-xl border-2 border-greyShades-400 py-4 px-6">
-      <h3 className="font-bold text-[24px] text-white-200">16+</h3>
-      <p className="font-medium text-[18px] text-greyShades-900">
-        Years of Experience
-      </p>
-    </div> */}
-            {Herobox.map((item) => {
-              const { id, head, para } = item;
-              return (
-                <div
-                  key={id}
-                  className="flex flex-col  text-center lg:text-start gap-1 bg-greyShades-300 rounded-xl border-2 border-greyShades-400 py-4 px-6"
-                >
-                  <h3 className="font-bold text-[24px] text-white-200 lg:texts-40-bold">
-                    {head}
-                  </h3>
-                  <p className="font-medium text-[18px]  text-greyShades-900">
-                    {para}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
+          <HeroBox/>
         </div>
       </section>
 
       {/* Sub hero sec */}
-      <section className="mt-4 Subcontainer bg-greyShades-200 rounded-xl border-[3px] border-greyShades-400 py-4">
+      {<section className="mt-4 Subcontainer bg-greyShades-200 rounded-xl border-[3px] border-greyShades-400 py-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {SubHerobox.map((items) => {
             const { id, icon1, para } = items;
@@ -93,7 +57,7 @@ const Herosec = () => {
             );
           })}
         </div>
-      </section>
+      </section>}
     </>
   );
 };

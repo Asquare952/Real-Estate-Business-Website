@@ -1,11 +1,22 @@
-'use client'
-
+import Hero from "./AboutHero";
+import OurValues from "./OurValues";
+import Achievement from "./Achievement";
+import Experience from "./Experience";
+import TheTeam from "./TheTeam";
+import ValuedClients from "./ValuedClients";
 const AboutPage = () => {
   return (
-    <div className="container">
-      <h2 className>About Page</h2>
-    </div>
-  )
-}
+    <>
+      <section className="container">
+        <Hero/>
+        <OurValues/>
+        <Achievement/>
+        <Experience/>
+        <TheTeam/>
+        <ValuedClients/>
+      </section>
+    </>
+  );
+};
 
-export default AboutPage
+export default AboutPage;
