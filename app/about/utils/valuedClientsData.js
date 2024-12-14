@@ -26,7 +26,7 @@ const Clients = [
     clientName: "ABC Corporation",
     year: "Since 2019",
     domain: "Commercial Real Estate",
-    catigory: "Luxury Home Development",
+    catigory: "Luxury Home",
     title: "What They Said 🤗",
     decs: "Estatein's expertise in finding the perfect office space for our expanding operations was invaluable. They truly understand our business needs.",
     path: "/",

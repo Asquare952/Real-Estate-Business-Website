@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -67,21 +67,21 @@ const FAQs = () => {
             height={30}
           />
         </div>
-        <div className="flex flex-col gap-3 md:flex-row md:items-center">
+        <div className="flex flex-col gap-3 justify-between md:flex-row md:items-center">
           <div className="flex flex-col gap-5">
             <h3 className="font-semibold text-2xl lg:text-[38px]">
               Frequently Asked Questions
             </h3>
-            <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
+            <p className="w-[1000px] font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
               Find answers to common questions about Estatein&apos;s services,
               property listings, and the real estate process. We&apos;re here to
               provide clarity and assist you every step of the way.
             </p>
           </div>
           <div>
-            <Button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
-              <Link href="/properties">View All FAQs</Link>
-            </Button>
+            <button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-6">
+              <Link href="/properties" className="text-sm">View All FAQs</Link>
+            </button>
           </div>
         </div>
 
@@ -98,9 +98,9 @@ const FAQs = () => {
                   <h3 className="font-semibold text-2xl">{title}</h3>
                   <p className="font-medium text-lg text-greyShades-900">{desc}</p>
 
-                  <Button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
+                  <button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
                     Read More
-                  </Button>
+                  </button>
                 </div>
               );
             })}

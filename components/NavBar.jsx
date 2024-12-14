@@ -20,7 +20,12 @@ const NavBar = () => {
       <section className="container flex justify-between items-center">
         <div className="flex items-center justify-between">
           <Link href="/" className="">
-            <Image src="/Assets/Images/Logo-1.png" alt="" width={160} height={26} />
+            <Image
+              src="/Assets/Images/Logo-1.png"
+              alt=""
+              width={160}
+              height={26}
+            />
           </Link>
           <div className="lg:hidden" onClick={handleSideNav}>
             <BiMenuAltRight className="w-10 h-8" />
@@ -30,15 +35,16 @@ const NavBar = () => {
           <ul className="flex gap-8">
             {NavData.map((item, index) => {
               return (
-                <li
+                <Link
                   key={item.id}
                   className={`text-18-medium nav-links-hover ${
                     index === Value && "active-nav-links"
                   }`}
                   onClick={() => setValue(index)}
+                  href={item.path}
                 >
-                  <Link href={item.path}>{item.title}</Link>
-                </li>
+                  {item.title}
+                </Link>
               );
             })}
           </ul>

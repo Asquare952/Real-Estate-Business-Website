@@ -8,6 +8,7 @@ const Hero = () => {
       <div className="mt-4">
         <Image
           src="/Assets/Images/about us hero img 2.png"
+          alt="about image"
           width={755}
           height={300}
           className="lg:h-[570px]"
@@ -16,6 +17,7 @@ const Hero = () => {
       <div className="flex flex-col gap-8">
         <Image
           src="/Assets/Images/Abstract-design-1.png"
+          alt="image"
           width={68}
           height={30}
         />
@@ -24,7 +26,7 @@ const Hero = () => {
           <p className="font-medium text-sm text-greyShades-900 lg:text-base lg:w-[610px] xl:text-lg xl:w-[755px]">
             Our story is one of continuous growth and evolution. We started as a
             small team with big dreams, determined to create a real estate
-            platform that transcended the ordinary. Over the years, we've
+            platform that transcended the ordinary. Over the years, we&apos;ve
             expanded our reach, forged valuable partnerships, and gained the
             trust of countless clients.
           </p>

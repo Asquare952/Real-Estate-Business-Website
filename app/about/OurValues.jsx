@@ -10,6 +10,7 @@ const OurValues = () => {
       <div className="flex flex-col gap-4">
         <Image
           src="/Assets/Images/Abstract-design-1.png"
+          alt="image"
           width={68}
           height={30}
         />
@@ -29,7 +30,7 @@ const OurValues = () => {
             <div key={id} className="flex flex-col gap-2">
               <div className="flex items-center gap-2">
                 <div className="rounded-[52px] border-[1px] border-purple-200 p-5">
-                  <Image src={icon} width={23} height={22} className="" />
+                  <Image src={icon} alt="image" width={23} height={22} className="" />
                 </div>
                 <h3>{head}</h3>
               </div>

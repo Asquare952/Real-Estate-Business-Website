@@ -4,6 +4,7 @@ import Achievement from "./Achievement";
 import Experience from "./Experience";
 import TheTeam from "./TheTeam";
 import ValuedClients from "./ValuedClients";
+import CTA from "../../components/CTA";
 const AboutPage = () => {
   return (
     <>
@@ -14,6 +15,7 @@ const AboutPage = () => {
         <Experience/>
         <TheTeam/>
         <ValuedClients/>
+        <CTA/>
       </section>
     </>
   );

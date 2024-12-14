@@ -1,11 +1,13 @@
-'use client'
+"use client";
 
+import Hero from "./Hero";
 const PropertiesPage = () => {
   return (
-    <div className="container">
-      <h2>Properties Page</h2>
+    <div>
+      <Hero />
+      <div className="container"></div>
     </div>
-  )
-}
+  );
+};
 
-export default PropertiesPage
+export default PropertiesPage;

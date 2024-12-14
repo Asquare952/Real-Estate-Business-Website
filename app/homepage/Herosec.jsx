@@ -1,5 +1,5 @@
 "use client";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { useState } from "react";
 import Image from "next/image";
 // import Link from "next/link";
@@ -30,12 +30,12 @@ const Herosec = () => {
             </p>
           </div>
           <div className="flex flex-col gap-5 lg:flex-row">
-            <Button className="text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[18px] px-6 cursor-pointer">
+            <button className="text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[18px] px-6 cursor-pointer">
               Learn More
-            </Button>
-            <Button className="bg-purple-200 font-medium text-lg text-white-200 rounded-[10px]  py-[18px] px-6 cursor-pointer">
+            </button>
+            <button className="bg-purple-200 font-medium text-lg text-white-200 rounded-[10px]  py-[18px] px-6 cursor-pointer">
               Browse Properties
-            </Button>
+            </button>
           </div>
           <HeroBox/>
         </div>

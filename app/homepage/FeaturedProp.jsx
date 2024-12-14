@@ -1,6 +1,6 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
 import Slider from "react-slick";
@@ -67,7 +67,7 @@ const FeaturedProp = () => {
             <h3 className="font-semibold text-2xl lg:text-[38px]">
               Featured Properties
             </h3>
-            <p className="font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
+            <p className="w-[1200px] font-medium text-[14px] md:text-base lg:text-lg text-greyShades-900">
               Explore our handpicked selection of featured properties. Each
               listing offers a glimpse into exceptional homes and investments
               available through Estatein. Click &quot;View Details&quot; for more
@@ -75,9 +75,9 @@ const FeaturedProp = () => {
             </p>
           </div>
           <div>
-            <Button className="bg-greyShades-300 text-white-200 font-medium text-lg rounded-[10px] border-2 border-greyShades-400 py-[20px] px-5">
-              <Link href="/properties">View All Properties</Link>
-            </Button>
+            <button className="bg-greyShades-300  rounded-[10px] border-2 border-greyShades-400 py-[18px] px-3">
+              <Link href="/properties" className="w-36 text-white-200 font-medium text-sm">View All Properties</Link>
+            </button>
           </div>
         </div>
 
@@ -118,9 +118,9 @@ const FeaturedProp = () => {
                       <span className="font-medium text-lg text-greyShades-900">Price</span>
                       <p className="font-semibold text-2xl">{price}</p>
                     </div>
-                    <Button className="bg-purple-200">
+                    <button className="bg-purple-200 rounded-[10px] py-[18px] px-3">
                       View Property Details
-                    </Button>
+                    </button>
                   </div>
                 </div>
               );
