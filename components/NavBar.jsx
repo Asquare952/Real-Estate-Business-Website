@@ -18,7 +18,7 @@ const NavBar = () => {
   return (
     <header className="bg-greyShades-300 py-2">
       <section className="container flex justify-between items-center">
-        <div className="flex items-center justify-between">
+        {/* <div className="flex items-center justify-between"> */}
           <Link href="/" className="">
             <Image
               src="/Assets/Images/Logo-1.png"
@@ -27,10 +27,11 @@ const NavBar = () => {
               height={26}
             />
           </Link>
-          <div className="lg:hidden" onClick={handleSideNav}>
-            <BiMenuAltRight className="w-10 h-8" />
-          </div>
-        </div>
+          {/* <BiMenuAltRight
+            className="w-10 h-8 lg:hidden"
+            onClick={handleSideNav}
+          /> */}
+        {/* </div> */}
         <nav className="hidden lg:flex">
           <ul className="flex gap-8">
             {NavData.map((item, index) => {
@@ -56,6 +57,10 @@ const NavBar = () => {
             </Link>
           </Button>
         </div>
+        <BiMenuAltRight
+            className="w-10 h-8 lg:hidden"
+            onClick={handleSideNav}
+          />
       </section>
       <SideNav openSideBar={OpenSideNav} />
     </header>

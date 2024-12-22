@@ -5,8 +5,8 @@ const Hero = () => {
     <section className="bg-gradient-to-r from-greyShades-400 py-[150px]">
       <div className="container flex flex-col gap-8">
         {/* <div className=""> */}
-          <h3 className="w-[358px] font-semibold text-[24px]">Find Your Dream Property</h3>
-          <p className="font-medium text-sm text-greyShades-900 md:w-[490px] lg:w-[690px] xl:w-[979px] lg:text-lg xl:text-[18px]">
+          <h3 className=" font-semibold text-[24px] lg:text-5xl">Find Your Dream Property</h3>
+          <p className="font-medium text-sm text-greyShades-900 md:w-[590px] lg:w-[998px] xl:w-[1358px] lg:text-lg ">
             Welcome to Estatein, where your dream property awaits in every
             corner of our beautiful world. Explore our curated selection of
             properties, each offering a unique story and a chance to redefine
